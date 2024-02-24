@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Fancify Shamcify</title>
+	<!-- Link HTML to javaScript -->
+	<script src="fancifymytext.js"></script>
+</head>
+
+<body>
+	<h1>Fancify my Text</h1>
+
+	<!-- 4x30 Text input field -->
+	<fieldset>
+		<legend>Text</legend>
+		<textarea id="textInput" rows="4" cols="30"></textarea>
+	</fieldset>
+
+	<!-- Fancify controls -->
+	<fieldset>
+		<legend>Fancify</legend>
+		<!-- "Bigger!" button changes text area's font size to 24pt. -->
+		<button id="biggerButton" onclick="showAlert()">Bigger!</button>
+		<!-- "Moo" button capitalizes the text in the text area and adds the suffix "-Moo" to the last word of each sentence.-->
+		<button id="mooButton">Moo</button>
+		<div>
+			<!-- "FancyShmancy" radio button sets the style of the text in the text area to: Bold, Blue, Underline -->
+			<input type="radio" id="fancyShmancy" name="style" value="fancyShmancy">
+			<label for="fancyShmancy">FancyShmancy</label>
+		</div>
+		<div>
+			<!-- "BoringBetty" radio button sets the style of the text in the text area to: Normal, Black, None -->
+			<input type="radio" id="boringBetty" name="style" value="boringBetty">
+			<label for="boringBetty">BoringBetty</label>
+		</div>
+	</fieldset>
+</body>
+
+</html>
